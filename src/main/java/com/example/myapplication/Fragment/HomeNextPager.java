@@ -28,6 +28,7 @@ class HomeNextPager {
     RecyclerView mRecyclerView;
     SwipeRefreshLayout mSwipeRefreshLayout;
 
+
     public TextView tvTitle;
     public TopViewPager vp;
     public HomeNextPager(Activity mActivity) {
@@ -37,7 +38,6 @@ class HomeNextPager {
     }
 
     private void inidata() {
-
         mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(android.R.color.white);
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent, android.R.color.holo_blue_bright, R.color.colorPrimaryDark,
                 android.R.color.holo_orange_dark, android.R.color.holo_red_dark, android.R.color.holo_purple);

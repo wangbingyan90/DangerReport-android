@@ -45,10 +45,10 @@ public class ContentFragment extends BaseFragment {
 
         mTab.setTabTextColors(ContextCompat.getColor(mActivity, R.color.black), ContextCompat.getColor(mActivity, R.color.white));
 
-        mTab.getTabAt(0).setText("主页").setIcon(R.drawable.home);
-        mTab.getTabAt(1).setText("通知").setIcon(R.drawable.connect);
-        mTab.getTabAt(2).setText("联系人").setIcon(R.drawable.rep);
-        mTab.getTabAt(3).setText("我").setIcon(R.drawable.user);
+        mTab.getTabAt(0).setText("主页").setIcon(R.drawable.tab_home);
+        mTab.getTabAt(1).setText("通知").setIcon(R.drawable.tab_connect);
+        mTab.getTabAt(2).setText("联系人").setIcon(R.drawable.tab_rep);
+        mTab.getTabAt(3).setText("我").setIcon(R.drawable.tab_user);
 
     }
 
