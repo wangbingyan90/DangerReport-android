@@ -55,7 +55,8 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
             itemView =inflater.inflate(R.layout.nexthome,null);
             return new HeaderViewHolder(itemView);
         }else if (viewType==2){
-            itemView =inflater.inflate(R.layout.nexthome2,null);
+            itemView =inflater.inflate(R.layout.nexthome2,parent,false);
+            return new Header2ViewHolder(itemView);
         }
         itemView =inflater.inflate(R.layout.recycler_item,null);
         return new ContentViewHolder(itemView);
@@ -126,7 +127,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
 
         } else if (holder instanceof ContentViewHolder) {
-            ((ContentViewHolder) holder).textview.setText(datas.get(position - 1));
+            ((ContentViewHolder) holder).textview.setText(datas.get(position - 2));
         }
     }
 
@@ -164,7 +165,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     //数据源的数量
     @Override
     public int getItemCount() {
-        return datas.size()+1;
+        return datas.size()+2;
     }
 
 
@@ -176,7 +177,12 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
             textview= (TextView) itemView.findViewById(R.id.textview);
         }
     }
+    class Header2ViewHolder extends RecyclerView.ViewHolder{
 
+        public Header2ViewHolder(View itemView) {
+            super(itemView);
+        }
+    }
 
 
 

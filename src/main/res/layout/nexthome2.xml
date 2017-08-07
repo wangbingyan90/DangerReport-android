@@ -1,6 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="223dp">
+
+        <LinearLayout
+            android:background="@drawable/tabbg"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.03">
+
+            <RelativeLayout
+                android:clickable="true"
+                android:background="@drawable/c"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/deal"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/set"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/dealtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:text="隐患处理"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:background="@drawable/c"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/safe"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/hand"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/pers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:textColor="@android:color/white"
+                    android:text="安全审批"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:clickable="true"
+                android:background="@drawable/c"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/warning"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/warning"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/warningtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:textColor="@android:color/white"
+                    android:text="一键警报"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="0.03">
+
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/c"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/daka"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/xunjian"
+                android:layout_marginTop="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/dakatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="巡检打卡"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/c"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/baobiao"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/baobiao"
+                android:layout_marginTop="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/baobiaotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="智能报表"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:background="@drawable/c"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gong"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/gonggao"
+                android:layout_marginTop="14dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/gongtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="车辆公告"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black1"
+        />
+
+
 
 </LinearLayout>

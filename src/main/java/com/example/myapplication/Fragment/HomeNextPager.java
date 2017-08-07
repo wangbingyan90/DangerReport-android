@@ -84,56 +84,5 @@ class HomeNextPager {
 
 
 
-//    private void inidata() {
-//        tvTitle.setText("标题");
-//        vp.setAdapter(new TopAdapter());
-//
-//    }
-//    private View initView() {
-//        View view = View.inflate(mActivity, R.layout.nexthome, null);
-//        tvTitle = (TextView) view.findViewById(R.id.titlenext);
-//        vp = (TopViewPager) view.findViewById(R.id.vp_next);
-//        return view;
-//
-//    }
-//
-//
-//    // 头条新闻数据适配器
-//    class TopAdapter extends PagerAdapter {
-//        int[] img = {R.drawable.new1,R.drawable.new2,R.drawable.new3,R.drawable.new4};
-//
-//        public TopAdapter() {
-////           图片获取
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return img.length;
-//        }
-//
-//        @Override
-//        public boolean isViewFromObject(View view, Object object) {
-//            return view == object;
-//        }
-//
-//        @Override
-//        public Object instantiateItem(ViewGroup container, int position) {
-//            tvTitle.setText("标题"+position);
-//            ImageView view = new ImageView(mActivity);
-//            view.setImageResource(img[position]);
-//            view.setScaleType(ImageView.ScaleType.FIT_XY);
-//
-//            container.addView(view);
-//
-//            return view;
-//        }
-//
-//        @Override
-//        public void destroyItem(ViewGroup container, int position, Object object) {
-//            container.removeView((View) object);
-//        }
-//
-//    }
-
 
 }
