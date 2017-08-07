@@ -5,7 +5,6 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.myapplication.R;
 
@@ -18,12 +17,10 @@ import java.util.ArrayList;
 class TopAdapter extends PagerAdapter {
     ArrayList<ImageView> imageViews=null;
     int[] img = {R.drawable.new1,R.drawable.new2,R.drawable.new3,R.drawable.new4};
-    TextView tvTitle;
     Context mContext;
-        public TopAdapter(Context mContext, TextView tvTitle) {
-            this.tvTitle=tvTitle;
+        public TopAdapter(Context mContext, ArrayList<ImageView> mImageViewList) {
             this.mContext = mContext;
-
+            imageViews = mImageViewList;
 //            for(int i=0 ;i<img.length;i++){
 //                ImageView viewimg = new ImageView(mContext);
 //                viewimg.setImageResource(img[i]);
@@ -47,15 +44,16 @@ class TopAdapter extends PagerAdapter {
 
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            tvTitle.setText("标题"+position);
 //            ImageView view = new ImageView(mContext);
 //            view.setImageResource(img[position]);
 //
 //            view.setScaleType(ImageView.ScaleType.FIT_XY);
-//
+////
 //            container.addView(view);
-//            container.addView(imageViews.get(position));
-            return null;
+//
+//            return view;
+            container.addView(imageViews.get(position));
+            return imageViews.get(position);
         }
 
         @Override
